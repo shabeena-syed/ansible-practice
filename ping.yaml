@@ -6,9 +6,9 @@
      ansible.builtin.dnf:
      name: nginx
      state: started
-     enabled: yes
+     
 
-   - name: Start and enable Nginx service
+   - name: Start and Nginx service
      ansible.builtin.service:
       name: nginx
       state: started
