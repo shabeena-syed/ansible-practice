@@ -5,8 +5,8 @@
     tasks:
     - name: Install Nginx
       ansible.builtin.dnf:
-        name: nginx
-        state: present
+      name: nginx
+      state: present
 
     - name: Start and enable Nginx service
       ansible.builtin.service:
