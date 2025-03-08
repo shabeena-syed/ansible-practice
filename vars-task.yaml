@@ -1,4 +1,4 @@
-- name: variables
+- name: variables from task
   hosts: localhost
   vars: #play level
    name: "shabeena"
