@@ -1,6 +1,9 @@
 - name: ping the server
   hosts: web
+  become: yes
   tasks:
-   - name: pinging the server
-     ansible.builtin.ping:
-
+   - name: installing nginx
+     ansible.builtin.dnf:
+     state: started
+     enabled: yes
+     
