@@ -7,9 +7,9 @@
    - shell
    - ansible
    experience: # map
-    devops: 3 #number) # key value pair
-    linux: 2
-   real project: true
+     devops: 3 #number) # key value pair
+     linux: 2
+   realproject: true
   tasks:
   - name: print variables
     ansible.builtin.debug:
