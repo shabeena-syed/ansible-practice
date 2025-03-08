@@ -1,0 +1,15 @@
+- name: variables
+  hosts: localhost
+  vars: #play level
+   name: "shabeena"
+   course: "DEVOPS"
+  tasks:
+   - name: print info
+     vars:
+      course: "terraform" #task level
+     ansible.builtin.debug:
+      msg: "hi my name is {{name}} im learnig {{course}}" 
+
+   - name: print info
+     ansible.builtin.debug:
+      msg: "hi my name is {{name}} im learnig {{course}}" 
