@@ -1,8 +1,8 @@
 - name: variable prefer
   hosts: [localhost]
   become: yes
-  vars:
-   wishes: "morning from play level"
+  # vars:
+  #  wishes: "morning from play level"
   vars_files:
   - vars.yaml
   # vars_prompt:
