@@ -1,0 +1,6 @@
+- name: vars from inventory
+  hosts: localhost
+  tasks:
+   - name: print info
+     ansible.built.debug:
+      masg: "hi my name is {{name}} learning {{couse}}"
