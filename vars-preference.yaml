@@ -5,12 +5,12 @@
    wishes: "morning from play level"
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: wishes
-    prompt: please enter wishes
-    private: false
-  vars:
-     wishes: "morning from task level"
+  # vars_prompt:
+  # - name: wishes
+  #   prompt: please enter wishes
+  #   private: false
+  # vars:
+  #    wishes: "morning from task level"
   tasks:
    - name: check prefer
      ansible.builtin.debug:

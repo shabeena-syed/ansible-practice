@@ -11,3 +11,7 @@
   - name: print info
     ansible.builtin.debug:
       msg: "hi username: {{USERNAME}}.password: {{PASSWORD}}" 
+
+      # 1 argumens
+      # 2 task level
+
