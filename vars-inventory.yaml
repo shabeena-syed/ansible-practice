@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: print info
-     ansible.built.debug:
+     ansible.builtin.debug:
       masg: "hi my name is {{name}} learning {{couse}}"
