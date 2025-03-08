@@ -1,5 +1,5 @@
 - name: PLAY-1  
-  hosts: local host
+  hosts: local hosts
   become: yes
   tasks:
    - name: play-1 and task-1
