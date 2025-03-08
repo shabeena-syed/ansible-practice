@@ -1,0 +1,8 @@
+- name: vars from args
+  hosts: [localhost]
+  become: yes
+  vars:
+  tasks:
+   - name: get from args
+     ansible.builtin.debug:
+      msg: "hello {{person}}, good{{WISHES}}"
