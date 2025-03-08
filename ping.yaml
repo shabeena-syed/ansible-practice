@@ -1,9 +1,25 @@
-- name: ping the server
+- name: install nginx
   hosts: web
   become: yes
   tasks:
-   - name: install nginx
+   - name: install and start nginx
      ansible.builtin.dnf:
      state: started
      enabled: yes
+
+  #    - name: Install and start Nginx
+  # hosts: web
+  # become: yes
+  # tasks:
+  #   - name: Install Nginx
+  #     ansible.builtin.dnf:
+  #       name: nginx
+  #       state: present
+
+  #   - name: Start and enable Nginx service
+  #     ansible.builtin.service:
+  #       name: nginx
+  #       state: started
+  #       enabled: yes
+
 
