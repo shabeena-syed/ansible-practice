@@ -9,9 +9,9 @@
   - name: wishes
     prompt: please enter wishes
     private: false
-  tasks:
-    vars:
+  vars:
      wishes: "morning from task level"
+  tasks:
    - name: check prefer
      ansible.builtin.debug:
       msg: "Hello, good {{wishes}}"
