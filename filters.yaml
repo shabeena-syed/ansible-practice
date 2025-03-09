@@ -30,11 +30,11 @@
     trainer: siva
     time: 20hrs
   tasks:
-   - name: before convert
-     ansible.builtin.command:
-       msg: "before convert: {{my_dict}}"
+  - name: before convert
+    ansible.builtin.command:
+     msg: "before convert: {{my_dict}}"
 
-   - name: after convert
-     ansible.builtin.debug:
-       msg: "after convert: {{my_dict | dict2items}}"
+  - name: after convert
+    ansible.builtin.debug:
+     msg: "after convert: {{my_dict | dict2items}}"
     
