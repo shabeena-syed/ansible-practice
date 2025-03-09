@@ -22,19 +22,19 @@
      ages: [20,30,50]
     ansible.builtin.debug:
      msg: "min age: {{ages | min}}, max age: {{ages | max}}"
-
-  - name: convert dict into items
-    vars:
-     my_dict: #this is calles dictionary r key value pair r map
-      course: devops
-      trainer: siva
-      time: 20hrs
-    tasks:
-    - name: before convert
-      ansible.builtin.command:
+- name: convert dict into items
+  hosts: localhost
+  vars:
+   my_dict: #this is calles dictionary r key value pair r map
+    course: devops
+    trainer: siva
+    time: 20hrs
+  tasks:
+   - name: before convert
+     ansible.builtin.command:
        msg: "before convert: {{my_dict}}"
 
-    - name: after convert
-      ansible.builtin.debug:
+   - name: after convert
+     ansible.builtin.debug:
        msg: "after convert: {{my_dict | dict2items}}"
     
