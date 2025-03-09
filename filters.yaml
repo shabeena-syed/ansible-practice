@@ -12,6 +12,7 @@
      msg: "{{greetings | bold}}"
 
   - name: remove duplicates
-    numbers: [1,2,2,3,4,5]
+    vars:
+     numbers: [1,2,2,3,4,5]
     ansible.builtin.debug:
      msg: "{{numbers | unique}}"
