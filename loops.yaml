@@ -1,11 +1,25 @@
-- name: demo on loops
-  hosts: localhost
+# - name: demo on loops
+#   hosts: localhost
+#   tasks:
+#   - name: print names
+#     ansible.builtin.debug:
+#      msg: "hello {{item}}"
+#     loop:
+#     - linux
+#     - shell
+#     - mysql
+
+- name: install package
+  hosts: web
+  become: yes
   tasks:
-  - name: print names
-    ansible.builtin.debug:
-     msg: "hello {{item}}"
+  - name: install package
+    ansible.builtin.dnf:
+     name: "{{item}}"
+     state: latest
     loop:
-    - linux
-    - shell
     - mysql
-    
+    - nginx
+    - postfix
+
+
