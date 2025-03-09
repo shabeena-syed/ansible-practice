@@ -9,7 +9,7 @@
     vars:
      greetings: "hello, goodmorning"
     ansible.builtin.debug:
-     msg: "{{greetings | uppercase}}"
+     msg: "{{greetings | upper}}"
 
   - name: remove duplicates
     vars:
