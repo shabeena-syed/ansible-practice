@@ -31,7 +31,7 @@
     time: 20hrs
   tasks:
   - name: before convert
-    ansible.builtin.command:
+    ansible.builtin.debug:
      msg: "before convert: {{my_dict}}"
 
   - name: after convert
