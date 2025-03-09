@@ -16,3 +16,10 @@
      numbers: [1,2,2,3,4,5]
     ansible.builtin.debug:
      msg: "{{numbers | unique}}"
+
+  - name: print max and min
+    vars:
+     ages: [20,30,50]
+    ansible.builtin.debug:
+     msg: "min age: {{ages | min}}, max age: {{ages | max}}"
+    
