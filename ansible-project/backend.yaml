@@ -1,5 +1,5 @@
 - name: configure backend server
-  hosts: [localhost]
+  hosts: [node]
   tasks:
   - name: disable default nodejs 
     ansible.builtin.command: dnf module disable nodejs -y
