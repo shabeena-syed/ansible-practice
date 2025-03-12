@@ -67,9 +67,19 @@
 
   - name: deamon reload
     ansible.builtin.service:
-     name: mysql
      deamon_reload: true
      
+  - name: Start service backend
+    ansible.builtin.service:
+     name: backend
+     state: started
+
+  - name: enable backend service
+    ansible.builtin.service:
+     name: backend
+     state: enabled 
+
+    
 
   
 
