@@ -12,10 +12,11 @@
   - name: enable nodejs:20
     ansible.builtin.command: dnf module enable nodejs:20 -y
 
-  - name: install nodejs
-    ansible.builtin.dnf: 
+  - name: Install Node.js
+    ansible.builtin.dnf:
     name: nodejs
-    state: installed
+    state: present
+
   
   - name: create expense user
     ansible.builtin.user:
