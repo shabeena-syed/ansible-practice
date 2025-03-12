@@ -28,8 +28,8 @@
 
   - name: Download backend code
     ansible.builtin.get_url:
-    url: curl -o https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
-    dest: /tmp/backend.zip
+     url: curl -o https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+     dest: /tmp/backend.zip
   
   - name: Unarchive a file 
     ansible.builtin.unarchive:
